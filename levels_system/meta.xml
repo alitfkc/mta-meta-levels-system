@@ -1,0 +1,35 @@
+<meta>
+	<info author="Metascripts" description="levels_system" type="script"/>
+
+
+    <!--settings -->
+	<script src="settings.lua" type="shared" cache="false"/>
+    
+    
+    <!--Data -->
+    <script src="data/db.lua" type="server" cache="false"/>
+
+
+
+    <!--Client -->
+    <script src="gui/gui.lua" type="client" cache="false"/>
+    <script src="gui/util_c.lua" type="client" cache="false"/>
+    
+    <!--Server -->
+    <script src="server/util_s.lua" type="server" cache="false"/>
+
+
+    <!--Exports -->
+    <script src="exports/exports_s.lua" type="server" cache="false"/>
+    <script src="exports/exports_c.lua" type="client" cache="false"/>
+        
+        <export function="export_levels_table" type="client"/>     <!--Get levels table client -->
+	    <export function="export_levels_table" type="server"/>     <!--Get levels table  server-->
+
+        <export function="export_level_data" type="client"/>     <!--Get level data client -->
+	    <export function="export_level_data" type="server"/>     <!--Get level data server-->
+
+        <export function="export_save_exp" type="client"/>     <!--set level data client -->
+	    <export function="export_save_exp" type="server"/>     <!--set level data server-->
+
+</meta>
